@@ -2,7 +2,7 @@ import os
 import requests
 
 # Always prompt for Hugging Face token at runtime
-hf_token = input('Enter your Hugging Face access token (starts with hf_...): ') # key is : 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
+hf_token = input('Enter your Hugging Face access token (starts with hf_...): ') 
 
 API_URL = "https://api-inference.huggingface.co/models/HuggingFaceH4/zephyr-7b-beta"
 headers = {"Authorization": f"Bearer {hf_token}"}
