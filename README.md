@@ -56,7 +56,6 @@ The objective of this task is to perform exploratory data analysis (EDA) and vis
 - This EDA provides a strong foundation for further analysis or machine learning tasks, such as classification.
 
 - ## Task2: Stock Price Prediction with Linear Regression
-- 
 The objective of this task is to predict the next day's closing price of Apple (AAPL) stock using historical stock data and a linear regression model. The workflow includes data fetching, feature engineering, model training, evaluation, and visualization of results.
 
 
@@ -98,4 +97,57 @@ The objective of this task is to predict the next day's closing price of Apple (
 
 ---
 
-## Task3: 
+## Task3:  Heart Disease Prediction with Decision Tree
+
+Predict the risk of heart disease in patients using health data and a Decision Tree classifier. The workflow includes data loading, cleaning, exploratory data analysis, model training, evaluation, and feature importance analysis.
+
+---
+
+### Dataset Used
+
+- **Source:** [UCI Heart Disease Dataset](https://storage.googleapis.com/download.tensorflow.org/data/heart.csv)
+- **Features:** Various patient health metrics (age, sex, cholesterol, etc.)
+- **Target:** Presence of heart disease (1 = Disease, 0 = No Disease)
+
+---
+
+### Models Applied
+
+- **Decision Tree Classifier**
+  - Used to classify patients as at risk or not at risk of heart disease based on their health data.
+
+---
+
+### Key Results and Findings
+
+- **Distribution of Target Variable:**
+  ![Distribution of Heart Disease](attachment:image1.png)
+  - The dataset is imbalanced, with more patients not having heart disease (target=0) than having it (target=1).
+
+- **Correlation Matrix:**
+  ![Correlation Matrix](attachment:image2.png)
+  - Shows relationships between features and the target variable. Some features are more strongly correlated with heart disease.
+
+- **Confusion Matrix:**
+  ![Confusion Matrix](attachment:image3.png)
+  - **Accuracy:** 73.77%
+  - True Negatives (No Disease predicted correctly): 37
+  - True Positives (Disease predicted correctly): 8
+  - False Positives (No Disease predicted as Disease): 7
+  - False Negatives (Disease predicted as No Disease): 9
+
+- **ROC Curve & AUC:**
+  ![ROC Curve](attachment:image4.png)
+  - **AUC Score:** 0.66
+  - The ROC curve shows the trade-off between true positive and false positive rates. An AUC of 0.66 indicates moderate model performance.
+
+---
+
+### Interpretation
+
+- The Decision Tree model achieves a moderate accuracy and AUC, indicating it can distinguish between patients with and without heart disease to a reasonable extent.
+- The class imbalance may affect model performance; consider using resampling techniques for improvement.
+- The correlation matrix and feature importance analysis help identify which health factors are most related to heart disease in this dataset.
+- This is a simple model and should not be used for real medical decisions. Always consult a healthcare professional for actual diagnosis or treatment.
+
+---
