@@ -84,7 +84,7 @@ The objective of this task is to predict the next day's closing price of Apple (
   This indicates that about 89.67% of the variance in the closing price can be explained by the model using the selected features.
 
 - **Visualization:**  
-  ![Actual vs Predicted Closing Prices](attachment:image1.png)  
+  ![Actual vs Predicted Closing Prices] 
   The plot shows the actual vs. predicted closing prices for the test set. The lines are closely aligned, indicating good model performance.
 
 ---
@@ -121,15 +121,15 @@ Predict the risk of heart disease in patients using health data and a Decision T
 ### Key Results and Findings
 
 - **Distribution of Target Variable:**
-  ![Distribution of Heart Disease](attachment:image1.png)
+  ![Distribution of Heart Disease](bar plot)
   - The dataset is imbalanced, with more patients not having heart disease (target=0) than having it (target=1).
 
 - **Correlation Matrix:**
-  ![Correlation Matrix](attachment:image2.png)
+  ![Correlation Matrix]
   - Shows relationships between features and the target variable. Some features are more strongly correlated with heart disease.
 
 - **Confusion Matrix:**
-  ![Confusion Matrix](attachment:image3.png)
+  ![Confusion Matrix]
   - **Accuracy:** 73.77%
   - True Negatives (No Disease predicted correctly): 37
   - True Positives (Disease predicted correctly): 8
@@ -137,7 +137,7 @@ Predict the risk of heart disease in patients using health data and a Decision T
   - False Negatives (Disease predicted as No Disease): 9
 
 - **ROC Curve & AUC:**
-  ![ROC Curve](attachment:image4.png)
+  ![ROC Curve]
   - **AUC Score:** 0.66
   - The ROC curve shows the trade-off between true positive and false positive rates. An AUC of 0.66 indicates moderate model performance.
 
