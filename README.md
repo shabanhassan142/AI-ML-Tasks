@@ -55,7 +55,7 @@ The objective of this task is to perform exploratory data analysis (EDA) and vis
 - Visualizations confirm that setosa is easily separable from the other species, while versicolor and virginica are more similar but still distinguishable.
 - This EDA provides a strong foundation for further analysis or machine learning tasks, such as classification.
 
-- ## Task2: Stock Price Prediction with Linear Regression
+## Task2: Stock Price Prediction with Linear Regression
 The objective of this task is to predict the next day's closing price of Apple (AAPL) stock using historical stock data and a linear regression model. The workflow includes data fetching, feature engineering, model training, evaluation, and visualization of results.
 
 
