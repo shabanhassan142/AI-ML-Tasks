@@ -151,3 +151,71 @@ Predict the risk of heart disease in patients using health data and a Decision T
 - This is a simple model and should not be used for real medical decisions. Always consult a healthcare professional for actual diagnosis or treatment.
 
 ---
+## Task 4: General Health Query Chatbot (Hugging Face LLM)
+
+### Task Objective
+
+Build a simple chatbot that can answer general health-related questions using a large language model (LLM) via the Hugging Face Inference API. The chatbot uses prompt engineering to provide friendly, safe, and responsible responses, and includes a safety filter to avoid giving harmful medical advice.
+
+---
+
+### Dataset / Model Used
+
+- **Model:** [HuggingFaceH4/zephyr-7b-beta](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta)
+- **API:** Hugging Face Inference API
+- **Data:** User-provided health-related questions (no training data required)
+
+---
+
+### Methods Applied
+
+- **Prompt Engineering:**
+  - The chatbot is instructed to act as a helpful, friendly, and responsible medical assistant.
+  - It avoids giving specific medical advice, diagnoses, or recommendations for treatments, medications, or dosages.
+  - Always encourages users to consult a healthcare professional for personal or urgent issues.
+- **Safety Filter:**
+  - Blocks queries containing unsafe or potentially harmful keywords (e.g., "prescribe", "overdose", "suicide").
+- **API Integration:**
+  - Uses the Hugging Face Inference API to send user queries to the LLM and return responses.
+
+---
+
+### Key Results and Findings
+
+- The chatbot can answer a wide range of general health questions in a friendly and responsible manner.
+- Example queries:
+  - "What causes a sore throat?"
+  - "Is paracetamol safe for children?"
+  - "How can I improve my sleep quality?"
+- The safety filter successfully blocks questions that could lead to harmful advice, ensuring responsible use.
+- The chatbot always reminds users to consult a healthcare professional for personal or urgent medical concerns.
+
+---
+
+### Interpretation
+
+- This chatbot demonstrates how LLMs can be used for general health information and education, but not for diagnosis or treatment.
+- The safety filter and prompt engineering are essential for responsible AI use in sensitive domains like healthcare.
+- The approach can be extended to other domains or improved with more advanced filtering and user experience features.
+
+---
+
+### Requirements
+
+- Python 3.x
+- requests
+- A free Hugging Face account and access token (get one at https://huggingface.co/settings/tokens)
+
+Install requirements with:
+```bash
+pip install requests
+```
+
+---
+
+### How to Run
+
+1. Open the script or notebook in your Python environment.
+2. Run the code. When prompted, enter your Hugging Face access token (starts with `hf_...`).
+3. Type your health-related question at the prompt. Type `exit` to quit.
+4. Review the chatbot's responses and ensure you consult a healthcare professional for any personal or urgent issues. 
