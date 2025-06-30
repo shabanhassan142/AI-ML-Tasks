@@ -55,5 +55,47 @@ The objective of this task is to perform exploratory data analysis (EDA) and vis
 - Visualizations confirm that setosa is easily separable from the other species, while versicolor and virginica are more similar but still distinguishable.
 - This EDA provides a strong foundation for further analysis or machine learning tasks, such as classification.
 
-- ## Task2
+- ## Task2: Stock Price Prediction with Linear Regression
 - 
+The objective of this task is to predict the next day's closing price of Apple (AAPL) stock using historical stock data and a linear regression model. The workflow includes data fetching, feature engineering, model training, evaluation, and visualization of results.
+
+
+### Dataset Used
+
+- **Source:** Yahoo Finance (via the `yfinance` Python library)
+- **Date Range:** 2020-01-01 to 2023-01-01
+- **Features Used:** Open, High, Low, Volume
+- **Target:** Next day's Close price
+
+---
+
+### Models Applied
+
+- **Linear Regression**
+  - Used to model the relationship between the selected features and the next day's closing price.
+
+---
+
+### Key Results and Findings
+
+- **Root Mean Squared Error (RMSE):** 3.37  
+  This means that, on average, the model's predictions are about $3.37 away from the actual closing price.
+
+- **R-squared (R²) Score:** 0.8967  
+  This indicates that about 89.67% of the variance in the closing price can be explained by the model using the selected features.
+
+- **Visualization:**  
+  ![Actual vs Predicted Closing Prices](attachment:image1.png)  
+  The plot shows the actual vs. predicted closing prices for the test set. The lines are closely aligned, indicating good model performance.
+
+---
+
+### Interpretation
+
+- The linear regression model performs well, as shown by the high R² score and low RMSE.
+- The model captures the general trend of the stock price, but may not predict sudden spikes or drops perfectly (as is typical for stock data).
+- This approach is a good baseline for stock price prediction, but more advanced models or additional features could further improve accuracy.
+
+---
+
+## Task3: 
